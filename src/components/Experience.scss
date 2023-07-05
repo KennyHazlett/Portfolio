@@ -1,0 +1,50 @@
+.experience-section-container {
+    background-color: #d7e7e0;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.experience-container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #000;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.experience {
+    margin-bottom: 40px;
+}
+
+.experience h3 {
+    font-size: 24px;
+}
+
+.experience h4 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.experience ul {
+    margin-top: 10px;
+}
+
+.experience li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.experience a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.experience a:hover {
+    color: #d7e7e0;
+}

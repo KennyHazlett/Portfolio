@@ -1,0 +1,214 @@
+/* General styles and animations */
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* Button styles and animations */
+.button-bounce {
+    display: inline-block;
+    padding: 0px 0px;
+    font-size: calc(25px + 1vw);
+    animation: bounce 1.5s infinite;
+    bottom: 100px;
+
+    &:hover {
+        animation: circulating-border-hover 3s infinite;
+        background-color: #000;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 10px;
+        bottom: 100px;
+    }
+}
+
+/* Button animation */
+.animated-button {
+    color: #000;
+    animation: colorChange 1.5s infinite;
+}
+
+.animated-letter {
+    color: #fff;
+    animation: colorChange 1.5s;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #fff;
+    }
+
+    50% {
+        color: #82add8;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+/* Add delay to each letter */
+@for $i from 0 through 8 {
+    .letter-#{$i} {
+        animation-delay: 0.2s * ($i + 1);
+    }
+}
+
+/* Header styles */
+.header-class {
+    background-color: #000;
+    padding: 10px;
+
+    &.center {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.header-menu {
+    border-radius: 0px;
+}
+
+/* Navigation styles */
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+
+    &:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    &:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 0.5s;
+    }
+
+    &:nth-child(4) {
+        animation-delay: 0.7s;
+    }
+
+    &:nth-child(5) {
+        animation-delay: 0.9s;
+    }
+
+    &:nth-child(6) {
+        animation-delay: 1.1s;
+    }
+
+    &:nth-child(7) {
+        animation-delay: 1.3s;
+    }
+
+    &:nth-child(8) {
+        animation-delay: 1.5s;
+    }
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: calc(6px + 1vw);
+    transition: text-shadow .2s ease-in-out;
+
+    &:hover {
+        text-shadow: 0 0 5px #82add8, 0 0 10px #82add8, 0 0 15px #82add8;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: calc(6px + 1vw);
+    transition: text-shadow .2s ease-in-out;
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 5px #82add8, 0 0 10px #82add8, 0 0 15px #82add8;
+}
+
+
+/* Menu styles */
+.MuiMenu-list {
+    background-color: #d7e7e0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.MuiMenuItem-root {
+    color: #fff;
+    background-color: #000;
+    font-size: calc(15px + 1vw);
+    justify-content: center;
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+    animation: colorChange 1.5s;
+
+    &:hover {
+        background-color: #82add8;
+        color: #000;
+        filter: saturate(1) brightness(1.12);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .button-bounce {
+        bottom: 200px;
+    }
+
+    .button-bounce:hover {
+        bottom: 200px;
+    }
+
+}
+
+.menu-icon:hover {
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-direction: reverse;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

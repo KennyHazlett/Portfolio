@@ -1,0 +1,85 @@
+.skills-section-container {
+    background-color: #d7e7e0;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.skills-list li {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform .2s ease-in-out;
+    background-color: #82add8;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #000;
+    }
+
+    100% {
+        background-color: #82add8;
+    }
+}
+
+.skills-list li:hover {
+    transform: scale(1.5);
+    /* Scale the item up on hover */
+}
+
+.skills-list img {
+    display: block;
+    /* Make the image a block element */
+    margin: 0 auto;
+    /* Center the image horizontally */
+}
+
+#skills ul li img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.skills-list-center {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
