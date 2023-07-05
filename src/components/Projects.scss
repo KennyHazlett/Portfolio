@@ -1,0 +1,82 @@
+/* Sections */
+.project-class {
+    background-color: #d7e7e0;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.section-container {
+    max-width: 800px;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #000;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 24px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        border-color: #d7e7e0;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+.project a {
+    font-size: 16px;
+    color: #82add8;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #d7e7e0;
+    /* The typewriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    /* Gives that scrolling effect as the typing happens */
+    animation:
+        typing 3.5s steps(40, end) forwards,
+        blink 3.5s step-end forwards;
+}

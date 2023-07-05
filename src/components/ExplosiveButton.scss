@@ -1,0 +1,20 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fragment {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fragment--debris {
+    background: #82add8;
+}
+
+.fragment--fire {
+    border-radius: 50%;
+}

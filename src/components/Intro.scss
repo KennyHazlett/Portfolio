@@ -1,0 +1,132 @@
+/* Introduction section styles */
+.intro-class {
+    background-color: #d7e7e0;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.text-container {
+    padding: 10px;
+    margin: 10px;
+}
+
+.intro-heading {
+    font-size: min(calc(26px + 1vw), 34px);
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fade-in 3s ease-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.intro-description {
+    font-size: min(calc(15px + 1vw), 26px);
+    color: #fff;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fade-in 3s ease-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.profile-photo {
+    max-width: 50%;
+    height: auto;
+    border-radius: 16px;
+    opacity: 0;
+    animation: fade-in 3s ease-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Media queries for responsive design */
+/* For tablets or small desktops */
+@media screen and (max-width: 1024px) {
+    .intro-container {
+        align-self: center;
+    }
+
+    .intro-description {
+        font-size: calc(16px + 1vw);
+    }
+}
+
+/* For mobile landscape and tablet portrait */
+@media screen and (max-width: 767px) {
+    .intro-container {
+        align-self: center;
+    }
+
+    .intro-heading {
+        font-size: min(24px + 1vw, 34px);
+    }
+
+    .intro-description {
+        font-size: min(13px + 1vw, 16px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro-container {
+        align-self: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For mobile portrait */
+@media screen and (max-width: 479px) {
+    .intro-container {
+        align-self: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-heading {
+        font-size: min(23px + 1vw, 34px);
+    }
+
+    .intro-description {
+        font-size: min(16px + 1vw, 16px);
+    }
+
+}

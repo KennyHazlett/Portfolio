@@ -1,0 +1,169 @@
+.feedback-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-modal-title {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.feedback-button {
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: circulating-border 3s infinite;
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+}
+
+.feedback-button:hover {
+    background-color: #82add8;
+    color: #000;
+    text-shadow: 0px 0px 5px #82add8, 0 0 10px #82add8, 0 0 15px #82add8;
+    border-radius: 50%;
+    animation: circulating-border 3s infinite;
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+
+}
+
+.MuiPaper-root {
+    background-color: #000;
+}
+
+.dialog-title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.dialog-actions {
+    justify-content: center;
+    align-self: center;
+    background-color: #000;
+}
+
+.dialog-button.MuiButton-root {
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: circulating-border 3s infinite;
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+}
+
+.dialog-button.MuiButton-root:hover {
+    background-color: #82add8;
+    color: #000;
+    text-shadow: 0px 0px 5px #82add8, 0 0 10px #82add8, 0 0 15px #82add8;
+    animation: circulating-border 3s infinite;
+    transition: background-color 1s ease-in-out, border-color 1s ease-in-out;
+}
+
+@keyframes circulating-border {
+    0% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    20% {
+        border-top: 2px solid white;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    40% {
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    60% {
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        border-left: 2px solid transparent;
+    }
+
+    80% {
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+    }
+
+    100% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+}
+
+@keyframes circulating-border-hover {
+    0% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    20% {
+        border-top: 2px solid #82add8;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    40% {
+        border-top: 2px solid #82add8;
+        border-right: 2px solid #82add8;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+
+    60% {
+        border-top: 2px solid #82add8;
+        border-right: 2px solid #82add8;
+        border-bottom: 2px solid #82add8;
+        border-left: 2px solid transparent;
+    }
+
+    80% {
+        border-top: 2px solid #82add8;
+        border-right: 2px solid #82add8;
+        border-bottom: 2px solid #82add8;
+        border-left: 2px solid #82add8;
+    }
+
+    100% {
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+}
